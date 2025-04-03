@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 30, 58, 138; /* #1E3A8A - dark navy blue */
+  --background-end-rgb: 0, 0, 0; /* #000000 - black */
+  --text-secondary: 147, 197, 253; /* #93C5FD - soft blue */
+  --hover-bg: 30, 64, 175; /* #1E40AF - lighter navy */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
+  background-attachment: fixed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(30, 58, 138, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.7);
+}
+
+/* Hover effects */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.tech-badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.tech-category {
+  @apply mb-6;
+}
+
+.tech-category h3 {
+  @apply text-xl font-semibold mb-3 text-white;
+}
+
+.tech-subcategory {
+  @apply mb-4;
+}
+
+.tech-subcategory h4 {
+  @apply text-lg font-medium mb-2 text-[#93C5FD];
+}
+
+.tech-list {
+  @apply flex flex-wrap gap-2;
+}
+
