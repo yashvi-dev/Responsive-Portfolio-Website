@@ -1,15 +1,16 @@
-import ProjectCard from "./project-card"
-import { SiTensorflow } from "react-icons/si"
-import { FaPlane } from "react-icons/fa"
+import ProjectCard from "./project-card";
+import { SiTensorflow } from "react-icons/si";
+import { FaPlane } from "react-icons/fa";
 
 export default function OngoingProjects() {
   const ongoingProjects = [
     {
       title: "Review Analyzer",
-      description: "ML-powered review analysis system with visualization dashboard",
+      description:
+        "ML-powered review analysis system with visualization dashboard",
       iconComponent: SiTensorflow,
       iconColor: "#FF6F00", // TensorFlow orange
-      link: "#",
+      link: "https://ml-review-analyzer.vercel.app/",
       techStack: [
         { name: "Next.js", color: "blue" },
         { name: "BERT", color: "yellow" },
@@ -20,7 +21,8 @@ export default function OngoingProjects() {
     },
     {
       title: "Travel Booking System",
-      description: "Full-featured travel booking platform with authentication, payments, and notifications",
+      description:
+        "Full-featured travel booking platform with authentication, payments, and notifications",
       iconComponent: FaPlane,
       iconColor: "#93C5FD", // Light blue
       link: "#",
@@ -31,7 +33,7 @@ export default function OngoingProjects() {
         { name: "Payment Gateway", color: "green" },
       ],
     },
-  ]
+  ];
 
   return (
     <section id="ongoing-projects">
@@ -50,6 +52,5 @@ export default function OngoingProjects() {
         ))}
       </div>
     </section>
-  )
+  );
 }
-
