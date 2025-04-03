@@ -1,18 +1,19 @@
-import ProjectCard from "./project-card"
-import { SiReact, SiNextdotjs, SiExpress } from "react-icons/si"
-import { FaCode } from "react-icons/fa"
-import { BiMoney } from "react-icons/bi"
-import { WiDayCloudy } from "react-icons/wi"
+import ProjectCard from "./project-card";
+import { SiReact, SiNextdotjs, SiExpress } from "react-icons/si";
+import { FaCode } from "react-icons/fa";
+import { BiMoney } from "react-icons/bi";
+import { WiDayCloudy } from "react-icons/wi";
 
 interface ProjectsSectionProps {
-  limit?: number
+  limit?: number;
 }
 
 export default function ProjectsSection({ limit }: ProjectsSectionProps) {
   const projects = [
     {
       title: "AI-Coffee-Shop-Ecommerce",
-      description: "A full-stack e-commerce platform with product catalog and cart functionality",
+      description:
+        "A full-stack e-commerce platform with product catalog and cart functionality",
       iconComponent: SiReact,
       iconColor: "#61DAFB", // React blue
       link: "https://github.com/yashvi-dev/Ai-coffee-shop-ecommerce",
@@ -24,10 +25,11 @@ export default function ProjectsSection({ limit }: ProjectsSectionProps) {
     },
     {
       title: "Portfolio Website",
-      description: "Personal portfolio website built with Next.js and Tailwind CSS",
+      description:
+        "Personal portfolio website built with Next.js and Tailwind CSS",
       iconComponent: SiNextdotjs,
       iconColor: "#FFFFFF", // Next.js white
-      link: "https://github.com/yashvi-dev/portfolio",
+      link: "https://github.com/yashvi-dev/Responsive-Portfolio-Website",
       techStack: [
         { name: "Next.js", color: "blue" },
         { name: "Tailwind CSS", color: "blue" },
@@ -62,7 +64,8 @@ export default function ProjectsSection({ limit }: ProjectsSectionProps) {
 
     {
       title: "Weather App",
-      description: "Real-time weather application with location-based forecasts",
+      description:
+        "Real-time weather application with location-based forecasts",
       iconComponent: WiDayCloudy, // Using Weather Icons package instead
       iconColor: "#F59E0B", // Amber color for weather
       link: "https://github.com/yashvi-dev/weather-app",
@@ -74,7 +77,8 @@ export default function ProjectsSection({ limit }: ProjectsSectionProps) {
     },
     {
       title: "Mini Projects Collection",
-      description: "Collection of small web development projects and experiments",
+      description:
+        "Collection of small web development projects and experiments",
       iconComponent: FaCode,
       iconColor: "#93C5FD", // Light blue
       link: "/mini-projects",
@@ -84,9 +88,9 @@ export default function ProjectsSection({ limit }: ProjectsSectionProps) {
         { name: "React", color: "blue" },
       ],
     },
-  ]
+  ];
 
-  const displayedProjects = limit ? projects.slice(0, limit) : projects
+  const displayedProjects = limit ? projects.slice(0, limit) : projects;
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -102,6 +106,5 @@ export default function ProjectsSection({ limit }: ProjectsSectionProps) {
         />
       ))}
     </div>
-  )
+  );
 }
-
