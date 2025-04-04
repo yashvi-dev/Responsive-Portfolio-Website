@@ -51,7 +51,7 @@ export default function Sidebar() {
             </li>
             <li>
               <Link
-                href="https://drive.google.com/file/d/1S1ifv0NQAYXi1ZWz2zltCNKs0dwit69_/view?usp=sharing"
+                href="https://drive.google.com/file/d/1kmCzJZVLFKS3z3--KHHamkMI7qui7xfP/view?usp=sharing"
                 target="_blank"
                 className="block px-4 py-2 rounded hover:bg-[#1E40AF] transition-colors"
               >
