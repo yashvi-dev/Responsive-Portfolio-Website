@@ -1,7 +1,7 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Github, Linkedin, Twitter } from "lucide-react"
-import { SiLeetcode } from "react-icons/si"
+import Image from "next/image";
+import Link from "next/link";
+import { Github, Linkedin, Twitter } from "lucide-react";
+import { SiLeetcode } from "react-icons/si";
 
 export default function MobileHeader() {
   return (
@@ -26,22 +26,35 @@ export default function MobileHeader() {
       <nav className="w-full mt-4">
         <ul className="flex justify-center space-x-4">
           <li>
-            <Link href="/" className="text-white hover:text-[#93C5FD] transition-colors">
+            <Link
+              href="/"
+              className="text-white hover:text-[#93C5FD] transition-colors"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link href="/projects" className="text-white hover:text-[#93C5FD] transition-colors">
+            <Link
+              href="/projects"
+              className="text-white hover:text-[#93C5FD] transition-colors"
+            >
               Projects
             </Link>
           </li>
           <li>
-            <Link href="/resume.pdf" target="_blank" className="text-white hover:text-[#93C5FD] transition-colors">
+            <Link
+              href="https://drive.google.com/file/d/1S1ifv0NQAYXi1ZWz2zltCNKs0dwit69_/view?usp=sharing"
+              target="_blank"
+              className="text-white hover:text-[#93C5FD] transition-colors"
+            >
               Resume
             </Link>
           </li>
           <li>
-            <Link href="#contact" className="text-white hover:text-[#93C5FD] transition-colors">
+            <Link
+              href="#contact"
+              className="text-white hover:text-[#93C5FD] transition-colors"
+            >
               Contact
             </Link>
           </li>
@@ -50,20 +63,35 @@ export default function MobileHeader() {
 
       {/* Social Links */}
       <div className="flex space-x-4 mt-4">
-        <Link href="https://github.com/yashvi-dev" target="_blank" aria-label="GitHub">
+        <Link
+          href="https://github.com/yashvi-dev"
+          target="_blank"
+          aria-label="GitHub"
+        >
           <Github className="w-5 h-5 text-white hover:text-[#93C5FD] transition-colors" />
         </Link>
-        <Link href="https://www.linkedin.com/in/yashvi-neema/" target="_blank" aria-label="LinkedIn">
+        <Link
+          href="https://www.linkedin.com/in/yashvi-neema/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
           <Linkedin className="w-5 h-5 text-white hover:text-[#93C5FD] transition-colors" />
         </Link>
-        <Link href="https://x.com/Yashvii_Neema" target="_blank" aria-label="Twitter">
+        <Link
+          href="https://x.com/Yashvii_Neema"
+          target="_blank"
+          aria-label="Twitter"
+        >
           <Twitter className="w-5 h-5 text-white hover:text-[#93C5FD] transition-colors" />
         </Link>
-        <Link href="https://leetcode.com/u/2mSyYDj9ht/" target="_blank" aria-label="Leetcode">
+        <Link
+          href="https://leetcode.com/u/2mSyYDj9ht/"
+          target="_blank"
+          aria-label="Leetcode"
+        >
           <SiLeetcode className="w-5 h-5 text-white hover:text-[#93C5FD] transition-colors" />
         </Link>
       </div>
     </div>
-  )
+  );
 }
-
