@@ -25,7 +25,7 @@ export default function OngoingProjects() {
         "Full-featured travel booking platform with authentication, payments, and notifications",
       iconComponent: FaPlane,
       iconColor: "#93C5FD", // Light blue
-      link: "#",
+      link: "https://github.com/yashvi-dev/Travel-Booking-FullStack",
       techStack: [
         { name: "Next.js", color: "blue" },
         { name: "APIs", color: "green" },
