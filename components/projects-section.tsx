@@ -3,6 +3,7 @@ import { SiReact, SiNextdotjs, SiExpress } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 import { BiMoney } from "react-icons/bi";
 import { WiDayCloudy } from "react-icons/wi";
+import { FaPlane } from "react-icons/fa";
 
 interface ProjectsSectionProps {
   limit?: number;
@@ -24,16 +25,17 @@ export default function ProjectsSection({ limit }: ProjectsSectionProps) {
       ],
     },
     {
-      title: "Portfolio Website",
+      title: "Travel Booking System",
       description:
-        "Personal portfolio website built with Next.js and Tailwind CSS",
-      iconComponent: SiNextdotjs,
-      iconColor: "#FFFFFF", // Next.js white
-      link: "https://github.com/yashvi-dev/Responsive-Portfolio-Website",
+        "Full-featured travel booking platform with authentication, payments, and notifications",
+      iconComponent: FaPlane,
+      iconColor: "#93C5FD", // Light blue
+      link: "https://github.com/yashvi-dev/Travel-Booking-FullStack",
       techStack: [
         { name: "Next.js", color: "blue" },
-        { name: "Tailwind CSS", color: "blue" },
-        { name: "TypeScript", color: "blue" },
+        { name: "APIs", color: "green" },
+        { name: "Google OAuth", color: "red" },
+        { name: "Payment Gateway", color: "green" },
       ],
     },
 

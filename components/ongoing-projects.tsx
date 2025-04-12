@@ -1,6 +1,6 @@
 import ProjectCard from "./project-card";
 import { SiTensorflow } from "react-icons/si";
-import { FaPlane } from "react-icons/fa";
+import { FaShieldAlt } from "react-icons/fa";
 
 export default function OngoingProjects() {
   const ongoingProjects = [
@@ -20,17 +20,16 @@ export default function OngoingProjects() {
       ],
     },
     {
-      title: "Travel Booking System",
+      title: "Women's Safety Tracking System",
       description:
-        "Full-featured travel booking platform with authentication, payments, and notifications",
-      iconComponent: FaPlane,
-      iconColor: "#93C5FD", // Light blue
-      link: "https://github.com/yashvi-dev/Travel-Booking-FullStack",
+        "Real-time safety tracking platform with location sharing, authentication, and emergency alerts.",
+      iconComponent: FaShieldAlt,
+      iconColor: "#F9A8D4", // Light pink
+      link: "https://github.com/yashvi-dev/Women-Safety-Tracking-System",
       techStack: [
         { name: "Next.js", color: "blue" },
-        { name: "APIs", color: "green" },
-        { name: "Google OAuth", color: "red" },
-        { name: "Payment Gateway", color: "green" },
+        { name: "Socket.io", color: "green" },
+        { name: "clerk", color: "blue" },
       ],
     },
   ];
